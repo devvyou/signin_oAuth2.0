@@ -21,7 +21,7 @@ app.use(session({
     secret: process.env.SESSION_SECRET,
     resave: false,
     saveUninitialized: false,
-    store: new connectMongo({ // connect-mongo package to store sessions in the database
+    store: new connectMongo({ // connect-mongo package to store sessions in mongodb
         mongoUrl: process.env.MONGO_URI,
         dbName: process.env.DB_NAME
     })
@@ -45,6 +45,6 @@ app.use((req, res, next) => {
 
 app.use('/', require('./routes/routes')) // Routes
 
-app.listen(80, () => {
+app.listen(80, () => { //! if you change the port, you've to change also the 'callbackURL' in the passport.js file and in the google console 
     console.log('server is listening');
 })

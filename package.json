@@ -10,5 +10,24 @@
     "mongoose": "^6.0.10",
     "passport": "^0.5.0",
     "passport-google-oauth2": "^0.2.0"
-  }
+  },
+  "name": "signin_oauth2.0",
+  "description": "Simple desc",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "set NODE_ENV=production & node app.js",
+    "dev": "set NODE_ENV=development & nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devvyou/signin_oAuth2.0.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/devvyou/signin_oAuth2.0/issues"
+  },
+  "homepage": "https://github.com/devvyou/signin_oAuth2.0#readme"
 }
