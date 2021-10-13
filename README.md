@@ -10,7 +10,7 @@ Simple side-project that integrates the google sign-in functionality thanks to o
 In this account i will build another project, more complete in ejs/html terms. So you can understand it more and more. It will be a 'real project scenario '.
 
 
-Before coding, most importantly, you've to setup this project inside the dev console of google.
+<h1>Before coding, most importantly, you've to setup this project inside the dev console of google.</h1>
 
 https://console.cloud.google.com
 
