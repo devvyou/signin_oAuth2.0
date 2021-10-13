@@ -1,16 +1,31 @@
-# signin_oAuth2.0
+<h3>Simple side-project that integrates the google sign-in functionality thanks to oAuth2.0. This is made with:</h3>
+<br>
+     
+     - Node.js (runtime)
+     - express.js (framework)
+     - ejs (template engine)
+     - passport.js (framework)
+     - passport-google-oauth20 (strategy of passport.js)
+     
+In this account i will build another project, more complete in ejs/html terms. So you can understand it more and more. It will be a 'real project scenario '.
 
-simple side-project with google-signin functionality
+<br>
+<br>
+<h1>Before coding, most importantly, you've to setup this project inside the dev console of google.</h1>
 
-- Install the packages: npm install;
-- Setup the project in the GOOGLE CONSOLE (steps are shown on github);
-- create and fill the .env file with your GOOGLE_CREDENTIALS;
-- run: npm start
+https://console.cloud.google.com<br>
+<br>
 
+General Steps:
+- Create the project
+- Configure the OAuth consent screen:
 
+      - External user type >
+      - add scopes:  .../auth/userinfo.email, 	.../auth/userinfo.profile
+      - add some emails to test the project in development mode
+      - Go in the 'credentials' section and create ID client OAuth
+      - Set 'web application' as type of the project(if it is naturally)
+      - as redirect URI, set:   http://localhost:80/google/callback
+      - Fill the credentials get from Google and fill them in the .env of the project
+     
 
-Made by - devvyou
-
-- @devvyou
-- devvyou.herokuapp.com
-- https://github.com/devvyou
